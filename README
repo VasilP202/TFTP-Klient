@@ -1,0 +1,41 @@
+Popis:
+    TFTP Klient v2 s rozšířeními timeout interval, blocksize option a transfer size option.
+
+Příklady spuštění:
+    >-R -d lorem.txt -a 127.0.0.1,69 -s 900   
+    [2021-11-15 23:34:18.858] Requesting READ from server 127.0.0.1:69
+    [2021-11-15 23:34:18.860] Receiving DATA ... 900 B of 10944 B
+    [2021-11-15 23:34:18.860] Receiving DATA ... 1800 B of 10944 B
+    [2021-11-15 23:34:18.860] Receiving DATA ... 2700 B of 10944 B
+    [2021-11-15 23:34:18.860] Receiving DATA ... 3600 B of 10944 B
+    [2021-11-15 23:34:18.861] Receiving DATA ... 4500 B of 10944 B
+    [2021-11-15 23:34:18.861] Receiving DATA ... 5400 B of 10944 B
+    [2021-11-15 23:34:18.861] Receiving DATA ... 6300 B of 10944 B
+    [2021-11-15 23:34:18.861] Receiving DATA ... 7200 B of 10944 B
+    [2021-11-15 23:34:18.862] Receiving DATA ... 8100 B of 10944 B
+    [2021-11-15 23:34:18.862] Receiving DATA ... 9000 B of 10944 B
+    [2021-11-15 23:34:18.862] Receiving DATA ... 9900 B of 10944 B
+    [2021-11-15 23:34:18.863] Receiving DATA ... 10800 B of 10944 B
+    [2021-11-15 23:34:18.863] Receiving DATA ... 10944 B of 10944 B
+    [2021-11-15 23:34:18.863] Transfer succesfully completed.
+
+
+    >-W -d obrazek.png  
+    [2021-11-15 23:34:55.855] Requesting WRITE from server 127.0.0.1:69
+    [2021-11-15 23:34:55.857] Sending DATA ... 512 B of 5078 B
+    [2021-11-15 23:34:55.857] Sending DATA ... 1024 B of 5078 B
+    [2021-11-15 23:34:55.857] Sending DATA ... 1536 B of 5078 B
+    [2021-11-15 23:34:55.857] Sending DATA ... 2048 B of 5078 B
+    [2021-11-15 23:34:55.858] Sending DATA ... 2560 B of 5078 B
+    [2021-11-15 23:34:55.858] Sending DATA ... 3072 B of 5078 B
+    [2021-11-15 23:34:55.858] Sending DATA ... 3584 B of 5078 B
+    [2021-11-15 23:34:55.858] Sending DATA ... 4096 B of 5078 B
+    [2021-11-15 23:34:55.858] Sending DATA ... 4608 B of 5078 B
+    [2021-11-15 23:34:55.859] Sending DATA ... 5078 B of 5078 B
+    [2021-11-15 23:34:55.859] Transfer succesfully completed.
+
+
+
+Omezení:
+    Netascii transfer
+    Multicast
